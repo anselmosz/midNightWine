@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <h1>Envie sua mensagem</h1>
+    <form action="#" method="post">
+      <div class="input-container">
+        <label for="userName">Nome</label>
+        <input type="text" maxlength="100" id="userName" autocomplete="off">
+      </div>
+      
+      <div class="input-container">
+        <label for="userEmail">Email</label>
+        <input type="email" maxlength="100" id="userEmail" autocomplete="off">
+      </div>
+      
+      <div class="input-container">
+        <label for="userTel">Telefone</label>
+        <input type="tel" maxlength="11" id="userTel" autocomplete="off">
+      </div>
+
+      <div class="input-container">
+        <label for="userMsg">Mensagem</label>
+        <textarea name="" id="userMsg" maxlength="150"></textarea>
+      </div>
+      <div class="btn-container">
+        <input class="input-btn" type="submit" value="Enviar mensagem">
+        <input class="input-btn" type="reset" value="Restaurar formulário">
+      </div>
+    </form>
+  </main>
+  <footer></footer>
+</body>
+</html>
