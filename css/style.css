@@ -5,6 +5,8 @@ body h1 {
   color: #fff;
   margin: 3rem;
 }
-div {
+.container{
   background-color: #fff;
+  border-radius: 10px;
 }
+
