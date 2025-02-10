@@ -27,17 +27,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
             <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li>
@@ -50,25 +39,36 @@
       </div>
     </nav>
   </header>
+  
   <h1>Envie sua mensagem</h1>
   <div class="container-lg">
     <form action="#" method="post">
-      <label for="userName">Nome</label>
-      <input type="text" maxlength="100" id="userName" autocomplete="off">
-      <br>
+      <div class="mb-3">
+        <label for="userName" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="userName" aria-describedby="nameHelp">
+      </div>
+    
 
-      <label for="userEmail">Email</label>
-      <input type="email" maxlength="100" id="userEmail" autocomplete="off">
-      <br>
+      <div class="mb-3">
+        <label for="userEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      
 
-      <label for="userTel">Telefone</label>
-      <input type="tel" maxlength="11" id="userTel" autocomplete="off">
-      <br>
+      <div class="mb-3">
+        <label for="userTel" class="form-label">Telefone</label>
+        <input type="tel" class="form-control" maxlength="11" id="userTel" autocomplete="off">
+        <div id="emailHelp" class="form-text">We'll never share your telephone with anyone else.</div>
+      </div>
+      
+      
 
-      <label for="userMsg">Mensagem</label>
-      <textarea name="" id="userMsg" maxlength="150"></textarea>
-      <br>
-
+      <div class="mb-3">
+        <label for="userMsg" class="form-label">Mensagem</label>
+        <textarea name="userMsg" class="form-control" id="userMsg" maxlength="150"></textarea>
+      </div>
+      
       <input class="btn btn-success" type="submit" value="Enviar">
       <input class="btn btn-danger" type="reset" value="Limpar">
       <button type="button" class="btn btn-primary">Cadastrar</button>
