@@ -13,7 +13,7 @@
   <header></header>
   <main>
     <h1>Envie sua mensagem</h1>
-    <form action="#" method="post">
+    <form>
       <div class="input-container">
         <label for="userName">Nome</label>
         <input type="text" maxlength="100" id="userName" autocomplete="off">
@@ -34,8 +34,8 @@
         <textarea name="" id="userMsg" maxlength="150"></textarea>
       </div>
       <div class="btn-container">
-        <input onclick="VerificarCampos();" class="input-btn" type="submit" value="Enviar">
-        <input class="input-btn" type="reset" value="Limpar">
+        <button onclick="VerificarCampos();" class="input-btn"> Enviar</button>
+        <button class="input-btn" >Limpar</button>
       </div>
       <p id="msgObt">Todos os Campos são obrigatórios</p>
     </form>

@@ -1,13 +1,10 @@
-let userName = document.getElementById('userName');
-let userEmail = document.getElementById('userEmail');
-let userTel = document.getElementById('userTel');
+let nome = document.getElementById('userName');
+let email = document.getElementById('userEmail');
+let telefone = document.getElementById('userTel');
 let msgObt = document.getElementById('msgObt');
 
-let 
-
-
 function VerificarCampos() {
-  if (userName.value = '') {
+  if (nome.value == '' && telefone.value == '' && email.value == '') {
     alert('Preencha todos os campos para enviar sua mensagem!')
   }
 };
