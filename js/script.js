@@ -3,6 +3,8 @@ let userEmail = document.getElementById('userEmail');
 let userTel = document.getElementById('userTel');
 let msgObt = document.getElementById('msgObt');
 
+let 
+
 
 function VerificarCampos() {
   if (userName.value = '') {
