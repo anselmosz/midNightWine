@@ -16,17 +16,17 @@
     <form>
       <div class="input-container">
         <label for="userName">Nome</label>
-        <input type="text" maxlength="100" id="userName" autocomplete="off">
+        <input type="text" maxlength="100" id="userName" autocomplete="on">
       </div>
       
       <div class="input-container">
         <label for="userEmail">Email</label>
-        <input type="email" maxlength="100" id="userEmail" autocomplete="off">
+        <input type="email" maxlength="100" id="userEmail" autocomplete="on">
       </div>
       
       <div class="input-container">
         <label for="userTel">Telefone</label>
-        <input type="tel" maxlength="11" id="userTel" autocomplete="off">
+        <input type="tel" maxlength="11" id="userTel" autocomplete="on">
       </div>
 
       <div class="input-container">
@@ -34,8 +34,8 @@
         <textarea name="" id="userMsg" maxlength="150"></textarea>
       </div>
       <div class="btn-container">
-        <button onclick="VerificarCampos(event);" class="input-btn"> Enviar</button>
-        <button class="input-btn" >Limpar</button>
+        <input onclick="VerificarCampos(event);" class="input-btn" type="submit" value="Enviar">
+        <input class="input-btn" type="reset" value="Limpar">
       </div>
       <p class="msgObt" id="msgObt"></p>
     </form>
