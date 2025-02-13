@@ -78,3 +78,7 @@ form {
   background-color: #c1c2c4;
   border-radius: 3rem;
 }
+.msgObt {
+  color: var(--text2);
+  font-weight: 600;
+}

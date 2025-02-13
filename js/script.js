@@ -7,8 +7,8 @@ function VerificarCampos(event) {
   event.preventDefault();
   if (nome.value == '' || telefone.value == '' || email.value == '') {
     // alert('Preencha todos os campos para enviar sua mensagem!')
-    paragrafo.innerText = "Preencha todos os campos!";
+    msgObt.innerText = "Preencha todos os campos!";
   } else if (nome.value != '' && telefone.value != '' && email.value != '') {
-    paragrafo.innerText = "Formulário enviado com sucesso!";
+    msgObt.innerText = "Formulário enviado com sucesso!";
   }
 };
