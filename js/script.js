@@ -4,6 +4,8 @@ let telefone = document.getElementById('userTel');
 let msgObt = document.getElementById('msgObt');
 let mensagem = document.getElementById("userMsg");
 
+emailjs.init('jprZzBBj2IeLFXCNo');
+
 function VerificarCampos(event) {
   event.preventDefault();
   if (nome.value == '' || telefone.value == '' || email.value == '' || mensagem.value == '') {
