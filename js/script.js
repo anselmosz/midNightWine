@@ -18,5 +18,14 @@ function VerificarCampos(event) {
     msgObt.style.color = '#00ff00';
     msgObt.style.fontWeight = '600';
     msgObt.style.textAlign = 'center';
+
+    
+    emailjs.send('service_4fjfj0x', 'template_gckk5js',
+      {
+        to_name : "Teste Site",
+        to_email : "testesite@email.com",
+        to_tel : "11 99999-9999",
+        to_message : "Mensagem de teste para mais uma ve não ter que colar um lorem ipsum dolor sit amet aleatório como teste."
+      });
   }
 };
