@@ -22,10 +22,10 @@ function VerificarCampos(event) {
     
     emailjs.send('service_4fjfj0x', 'template_gckk5js',
       {
-        to_name : "Teste Site",
-        to_email : "testesite@email.com",
-        to_tel : "11 99999-9999",
-        to_message : "Mensagem de teste para mais uma ve não ter que colar um lorem ipsum dolor sit amet aleatório como teste."
+        to_name : nome.value,
+        to_email : email.value,
+        to_tel : telefone.value,
+        to_message : mensagem.value
       });
   }
 };
