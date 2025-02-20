@@ -28,5 +28,10 @@ function VerificarCampos(event) {
         to_message : mensagem.value
       }
     );
+
+    nome.value = '';
+    email.value = '';
+    telefone.value = '';
+    mensagem.value = '';
   }
 };
