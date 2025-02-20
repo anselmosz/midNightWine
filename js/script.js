@@ -26,6 +26,7 @@ function VerificarCampos(event) {
         to_email : email.value,
         to_tel : telefone.value,
         to_message : mensagem.value
-      });
+      }
+    );
   }
 };
