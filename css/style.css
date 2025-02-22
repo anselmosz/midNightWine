@@ -9,7 +9,7 @@
   --fundo2: #313638ea;
 }
 body {
-  background-color: var(--text2);
+  background-color: var(--fundo2);
 }
 
 main {
@@ -22,6 +22,7 @@ main {
 main h1 {
   font-size: 3rem;
   font-weight: 500;
+  color: var(--fundo);
 }
 
 form {
@@ -48,7 +49,7 @@ form {
   padding: 8px 1rem;
   border: none;
   outline: none;
-  border-radius: 3rem;
+  border-radius: 7px;
   font-size: 1rem;
 }
 .input-container textarea {
@@ -56,7 +57,7 @@ form {
   padding: 8px;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 .btn-container {
   display: flex;
@@ -72,9 +73,42 @@ form {
   padding: 8px 0;
   background-color: var(--text2);
   border-radius: 10px;
+  box-shadow: 0px 2px 2px #000;
   transition: 0.2s ease;
 }
-.input-btn:hover {
-  background-color: #c1c2c4;
+.submit:hover {
+  background-color: #00ff00;
   border-radius: 3rem;
+  font-weight: 600;
+}
+
+.clear:hover {
+  background-color: #ff0000;
+  border-radius: 3rem;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 1380px) {
+  form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main h1 {
+    font-size: 2rem;
+  }
+  form {
+    width: 70%;
+  }
+  .input-container {
+    font-size: 1.2rem;
+  }
 }

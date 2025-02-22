@@ -13,11 +13,13 @@ function VerificarCampos(event) {
     msgObt.style.color = '#ff0000';
     msgObt.style.fontWeight = '600';
     msgObt.style.textAlign = 'center';
+    msgObt.style.textShadow = '2px 2px 2px #000'
   } else {
     msgObt.innerText = "Formulário enviado!";
     msgObt.style.color = '#00ff00';
     msgObt.style.fontWeight = '600';
     msgObt.style.textAlign = 'center';
+    msgObt.style.textShadow = '2px 2px 2px #000'
 
     
     emailjs.send('service_4fjfj0x', 'template_gckk5js',
