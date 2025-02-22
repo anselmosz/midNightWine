@@ -22,9 +22,9 @@ function VerificarCampos(event) {
     
     emailjs.send('service_4fjfj0x', 'template_gckk5js',
       {
-        to_name : nome.value,
-        to_email : email.value,
-        to_tel : telefone.value,
+        from_name : nome.value,
+        from_email : email.value,
+        from_tel : telefone.value,
         to_message : mensagem.value
       }
     );
